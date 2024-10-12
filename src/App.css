@@ -1,0 +1,280 @@
+#root {
+  width:100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* App.css */
+.home {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.start-shopping-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.start-shopping-btn:hover {
+  background-color: #218838;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product-item {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-item h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f8f8;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+
+nav a,
+nav button {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+/* Home Section Styling */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  padding: 20px;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-section {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.text-section h1 {
+  font-size: 3rem;
+  color: brown;
+}
+
+.text-section p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.start-shopping-button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.start-shopping-button:hover {
+  background-color: #0056b3;
+}
+
+.video-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ecommerce-video {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .text-section {
+    padding-right: 0;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .text-section h1 {
+    font-size: 2.5rem; 
+  }
+
+  .text-section p {
+    font-size: 1.2rem;
+  }
+
+  .ecommerce-video {
+    height: 60%;
+    
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column; 
+  }
+
+  .text-section {
+    padding-right: 0;
+    text-align: center; 
+    margin-bottom: 20px; 
+  }
+
+  .text-section h1 {
+    font-size: 2rem; 
+  }
+
+  .text-section p {
+    font-size: 1rem; 
+  }
+
+  .ecommerce-video {
+    max-width: 80%; 
+    height: 50%;
+  }
+
+  .text-section h1 {
+    margin-top: 20px;
+  }
+
+  footer{
+    margin-top: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .text-section h1 {
+    margin-top: 20px;
+  }
+
+  .text-section p {
+    font-size: 0.9rem; 
+  }
+
+  .start-shopping-button {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  footer{
+    margin-top: 30px;
+  }
+}
+
+
+/* Loading CSS*/
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.loading-spinner {
+  border: 8px solid #f3f3f3; 
+  border-top: 8px solid #3498db; 
+  border-radius: 50%;
+  width: 50px; 
+  height: 50px; 
+  animation: spin 1s linear infinite; 
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
