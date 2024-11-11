@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Cart from './components/Cart';
 import NotFound from './components/NotFound';
-import Checkout from './components/Checkout';
+import Checkout from './components/checkout';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Home from './components/Home';
