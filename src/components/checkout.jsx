@@ -6,7 +6,7 @@ import './checkout.css';
 const Checkout = () => {
   const { items } = useSelector((state) => state.cart);
   const { isAuthenticated } = useSelector((state) => state.auth);
-  
+  //form data
   const [formData, setFormData] = useState({
     fullName: '',
     address: '',
